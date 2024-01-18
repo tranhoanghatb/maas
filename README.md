@@ -2,13 +2,31 @@
 An Ansible playbook for installing and configuring MAAS, further documentation is found [here](https://maas.io/docs/ansible-playbooks-reference).
 
 ## Supported versions
-This playbook has been tested with Ansible version 5.10.0 and above. We recommend using the latest available stable version of Ansible (currently 7.x). The `netaddr` Python library needs to be installed on the machine on which Ansible is used; note that this is not required on remote hosts.
+This playbook has been tested with Ansible version 5.10.0 and above. We recommend using the latest available stable version of Ansible (currently 7.x). The `netaddr` Python library needs to be installed on the machine on which Ansible is used; note that this is not required on remote hosts. If you are running on Mac OS, you will also need to install the passlib python module.
+
 
 ## Install
 
 ```
 git clone git@github.com:maas/maas-ansible-playbook
 ```
+
+To install all python requirements (including Ansible itself) into a virtual Python 3 environment, you should navigate to the root of the repository cloned above and run:
+
+```bash
+python3 -m venv maas-ansible-venv
+source maas-ansible-venv/bin/activate
+pip install -r requirements.txt
+```
+
+Please remember to activate your virtual environment every time you open a new shell by navigating to the root of this repository and running:
+
+```bash
+source maas-ansible-venv/bin/activate
+```
+
+To learn more about the usage of python virtual environments please refer to the official documentation [here](https://docs.python.org/3/library/venv.html).
+
 
 ## Setup
 This playbook has several main roles, each has a corresponding group to assign hosts to. They are as follows:
