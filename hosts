@@ -1,6 +1,6 @@
 [maas_corosync]
 172.11.2.11 ansible_user=administrator 
-172.11.2.12 ansible_connection=local
+172.11.2.12 ansible_user=administrator
 172.11.2.13 ansible_user=administrator
 
 [maas_pacemaker:children]
@@ -8,23 +8,23 @@ maas_corosync
 
 [maas_postgres]
 172.11.2.11 ansible_user=administrator
-172.11.2.12 ansible_connection=local
+172.11.2.12 ansible_user=administrator
 172.11.2.13 ansible_user=administrator
 
 [maas_postgres_proxy]
 172.11.2.11 ansible_user=administrator
-172.11.2.12 ansible_connection=local
+172.11.2.12 ansible_user=administrator
 172.11.2.13 ansible_user=administrator
 
 
 [maas_region_controller]
 172.11.2.11 ansible_user=administrator
-172.11.2.12 ansible_connection=local
+172.11.2.12 ansible_user=administrator
 172.11.2.13 ansible_user=administrator
 
 [maas_rack_controller]
 172.11.2.11 ansible_user=administrator
-172.11.2.12 ansible_connection=local
+172.11.2.12 ansible_user=administrator
 172.11.2.13 ansible_user=administrator
 
 
