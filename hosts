@@ -1,16 +1,32 @@
-# Define hosts for MAAS here
-
 [maas_corosync]
+172.11.2.11
+172.11.2.12
+172.11.2.13
 
 [maas_pacemaker:children]
 maas_corosync
 
 [maas_postgres]
+172.11.2.11
+172.11.2.12
+172.11.2.13
 
 [maas_postgres_proxy]
+172.11.2.11
+172.11.2.12
+172.11.2.13
 
-[maas_proxy]
 
 [maas_region_controller]
+172.11.2.11
+172.11.2.12
+172.11.2.13
 
 [maas_rack_controller]
+172.11.2.11
+172.11.2.12
+172.11.2.13
+
+
+[maas_proxy]
+172.11.2.11
